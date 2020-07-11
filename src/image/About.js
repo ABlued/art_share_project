@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import {Link} from 'react-router-dom';
+
 function About(){
     return(
         <div className="about__container">
