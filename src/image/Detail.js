@@ -1,4 +1,5 @@
 import React from 'react';
+import './Detail.css';
 
 class Detail extends React.Component{
     componentDidMount(){
@@ -11,7 +12,7 @@ class Detail extends React.Component{
         const { location } = this.props;
         if(location.state){
             return (
-                <div>
+                <div className="container_Detail">
                     <img src = {location.state.path} alt = {location.state.name} title = {location.state.name}/>
                     <h1 className="image__title">작품명 : {location.state.name} </h1>
                     <span className="image__year">작성일 : {location.state.year} </span>
